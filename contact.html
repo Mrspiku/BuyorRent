@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+
+        <title>Content Creation Tutorials</title>
+        <link rel="stylesheet" href="style.css">
+      
+
+        
+    </head>
+    <body>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src ="image/logo1.jpg"></a>
+                <div class="nav-links" id="navlinks">
+                    <div class="ico">
+
+                    <ion-icon name="close-circle-outline"   onclick="hideMenu()"></ion-icon></div>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="property.html">PROPERTY</a></li>
+                        <li><a href="partner.html">PARTNER</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <div class="ico">
+                    <ion-icon name="reorder-three-outline"  onclick="showMenu()"></ion-icon></div>
+            </nav>
+            <h1>Contact Us</h1>
+        </section>
+        <!------Conatact Us------->
+        <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63802.502299387554!2d88.29261991470806!3d22.535202454526168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1655368661603!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
+        <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <ion-icon class="io" name="home-outline"></ion-icon>
+                        <span>
+                            <h5>44/5, Naskar Para Lane </h5>
+                            <p>Howrah, West Bengal, India</p>
+                        </span>
+                    </div>
+                    <div>
+                        <ion-icon class="io" name="call-outline"></ion-icon>
+                        <span>
+                            <h5>+91 8336064878</h5>
+                            <p>Monday to Sunday, 10AM to 6PM</p>
+                        </span>
+                    </div>
+                    <div>
+                        <ion-icon  class="io" name="mail-outline"></ion-icon>
+                        <span>
+                            <h5>priyanka96325@gmail.com</h5>
+                            <p>Email Us Your Query</p>
+                        </span>
+                    </div>
+                    
+                    
+                </div>
+                <div class="contact-col">
+
+                <form action="formhandler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" placeholder="Enter Your Email" required>
+                    <select name="City">
+                        <option value="Delhi">Delhi</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Kolakata">Kolkata</option>
+                    </select>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea></textarea>
+                    <button type="submit" class="hero-btn red-btn" >Send Message</button>
+                </form>
+            </div>
+        </section>
+
+
+
+
+
+        
+        <!-----------------Footer-------->
+        <section class="footer">
+            <h4>About us</h4>
+            <p>An immense mausoleum of white marble, built in Agra between 1631 and 1648<br>
+                 by order of the Mughal emperor Shah Jahan in memory of his favourite wife.</p>
+                 <div class="icons">
+
+                 
+                 <ion-icon name="logo-twitter"></ion-icon>
+                 <ion-icon name="logo-instagram"></ion-icon>
+                 <ion-icon name="logo-facebook"></ion-icon>
+                 <ion-icon name="logo-linkedin"></ion-icon>
+                 <ion-icon name="logo-youtube"></ion-icon>
+                 </div>
+                 
+                    
+                    
+
+                 </div>
+                 <p>Made with  <ion-icon class="icos" name="heart-circle-outline"></ion-icon>  by Experts</p>
+
+                </section>
+
+           <!----------------javaScript for toggle menu---------->
+
+           <script>
+            var navlinks= document.getElementById("navlinks");
+            function showMenu(){
+                navlinks.style.right = "0";
+            }
+
+            function hideMenu(){
+                navlinks.style.right = "-200px";
+                
+            }
+           </script>
+    </body>
+</html>

@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+
+        <title>Content Creation Tutorials</title>
+        <link rel="stylesheet" href="style.css">
+      
+
+        
+    </head>
+    <body>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src ="image/logo1.jpg"></a>
+                <div class="nav-links" id="navlinks">
+                    <div class="ico">
+
+                    <ion-icon name="close-circle-outline"   onclick="hideMenu()"></ion-icon></div>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="property.html">PROPERTY</a></li>
+                        <li><a href="partner.html">PARTNER</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <div class="ico">
+                    <ion-icon name="reorder-three-outline"  onclick="showMenu()"></ion-icon></div>
+            </nav>
+            <h1>Our Partner</h1>
+        </section>
+
+        <!-------------partner------------>
+
+        <section class="partner">
+
+        <div class="row">
+            <div class="part-left">
+                <img src="image/partner1.png"><h2>Our Best Consultant</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium cumque quae sint excepturi harum quos at quidem magnam placeat explicabo, eligendi unde provident aut a, ipsa, repudiandae laborum ullam ipsum!</p>
+                <br><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, optio ullam officia est similique soluta, quaerat exercitationem veritatis enim suscipit laudantium ea aliquid. Consectetur dolor sunt et quas, architecto necessitatibus.</p>
+                <br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, nihil? Laudantium facilis assumenda voluptas! Eius odio consequuntur, saepe pariatur sequi id, illo quod quos, nemo inventore aut nulla laudantium doloremque!</p>
+            <div class="comment-box">
+                <h3>Send a Message</h3>
+                <form class="comment-form">
+                    <input type="text"  placeholder="Enter Name">
+                    <input type="email"  placeholder="Enter Email">
+                    <textarea rows="5" placeholder="Your message"></textarea>
+                    <button type ="submit" class="hero-btn"> SEND MESSAGE</button>
+                </form>
+            </div>
+            </div>
+                
+            
+            <div class="part-right">
+                <h3>Other Partners</h3>
+                <div>
+                    <span>Aditya Birla</span>
+                    <span>Total Land: 40</span>
+                </div>
+                <div>
+                    <span>Relaince</span>
+                    <span>Total Land: 30</span>
+                </div>
+                <div>
+                    <span>Tata and Motors</span>
+                    <span>Total Land: 50</span>
+                </div>
+                <div>
+                    <span>Jauguar</span>
+                    <span>Total Land: 10</span>
+                </div>
+                <div>
+                    <span>Aldos</span>
+                    <span>Total Land: 30</span>
+                </div>
+                <div>
+                    <span>Pantaloons</span>
+                    <span>Total Land: 30</span>
+                </div>
+                <div>
+                    <span>Brooms</span>
+                    <span>Total Land: 50</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+        
+      
+        <!-----------------Footer-------->
+        <section class="footer">
+            <h4>About us</h4>
+            <p>An immense mausoleum of white marble, built in Agra between 1631 and 1648<br>
+                 by order of the Mughal emperor Shah Jahan in memory of his favourite wife.</p>
+                 <div class="icons">
+
+                 
+                 <ion-icon name="logo-twitter"></ion-icon>
+                 <ion-icon name="logo-instagram"></ion-icon>
+                 <ion-icon name="logo-facebook"></ion-icon>
+                 <ion-icon name="logo-linkedin"></ion-icon>
+                 <ion-icon name="logo-youtube"></ion-icon>
+                 </div>
+                 
+                    
+                    
+
+                 </div>
+                 <p>Made with  <ion-icon class="icos" name="heart-circle-outline"></ion-icon>  by Experts</p>
+
+                </section>
+
+           <!----------------javaScript for toggle menu---------->
+
+           <script>
+            var navlinks= document.getElementById("navlinks");
+            function showMenu(){
+                navlinks.style.right = "0";
+            }
+
+            function hideMenu(){
+                navlinks.style.right = "-200px";
+                
+            }
+           </script>
+    </body>
+</html>
