@@ -6,7 +6,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(243, 247, 251, 0.94),rgba(248, 248, 251, 0.7));
+    background-image: url(image/home.png);
     background-position: center;
     background-size: cover;
     position:relative;
@@ -27,7 +27,7 @@ nav img{
 }
 .nav-links{
     flex: 1;
-    text-align: right;
+    text-align: left;
 }
 .nav-links ul li{
     list-style:none;
@@ -43,17 +43,153 @@ nav img{
    
 
 }
+
+/*--------------------Loginorsign-------------*/
+
+
+.form-fill{
+    height: 500px;
+    width: 500px;
+    position: relative;
+    margin: 10% auto;
+    background: #e7e4e4;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+
+  
+}
+.btn-box{
+    width: 300px;
+    
+    margin: 30px auto;
+    position: relative;
+    box-shadow: 0 0 3px 3px rgb(243, 158, 54) ;
+    border-radius: 30px;
+
+}
+
+.option-button{
+    padding: 15px 45px;
+    cursor: pointer;
+    background: transparent;
+    border:0;
+    outline: none;
+    position: relative;
+
+}
+
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 160px;
+    height: 100%;
+    background: orange;
+    border-radius: 30px;
+    transition: 0.5s;   
+
+}
+.social-media{
+    text-align: center;
+    color:rgb(238, 122, 20);
+    margin: 0 12px;
+    cursor: pointer;
+    padding: 3px;
+
+}
+
+.info{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: 0.5s;
+    
+}
+
+.input-fill{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+    align-items: center;
+
+}
+
+.submit-btn{
+    width: 100%;
+    padding: 15px 45px;
+    cursor: pointer;
+    margin: auto;
+    background: coral;
+    display: block;
+    border:0;
+    outline: none;
+    border-radius: 30px;
+    text-align: center;
+    font-weight: bold;
+
+
+}
+.check-fill{
+    margin: 30px 10px 30px 0;
+}
+
+#write{
+    color:rgb(24, 23, 23);
+    font-size: 15px;
+    position: absolute;
+    bottom: 73px;
+    font-weight: bold;
+
+}
+#login{
+    left: 100px;
+
+}
+#register{
+    left: 600px;
+
+}
+
+.first{
+        display: inline-block;
+        text-decoration: none;
+        color:rgb(0, 0, 0);
+        border: 2px solid #0b0b0b;
+        padding: 5px 12px;
+        font-size: 15px;
+        font-weight: bold;
+        background: transparent;
+        position: relative;
+        cursor: pointer; 
+        border-radius: 30px;
+    }
+
+#first1:hover{
+    background-color:rgb(238, 122, 20);
+    transition: 0.5s;
+}
+
+
+
+
 .nav-links ul li ::after{
     content: '';
     width: 0%;
     height: 2px;
-    background :#161515;
+    background :#f2a532;
     display: block;
     margin : auto;
     transition: 0.5s;
 }
 .nav-links ul li :hover::after{
-    background-color: #181616;
+    background-color: #f09b24;
     width: 100%;
 }
 .text-box{
@@ -63,7 +199,7 @@ nav img{
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-    text-align: center;
+    text-align: left;
 }
 .text-box h1{
     font-size: 60px;
@@ -100,6 +236,8 @@ nav .ico{
     text-box h1{
         font-size: 20px;
     }
+
+    
     .nav-links ul li{
         display: block;
     }
@@ -138,6 +276,9 @@ nav .ico{
 h1{
     font-size: 40px;
     font-weight: bolder;
+    color: #f09b24;
+
+
 
 }
 
@@ -154,25 +295,63 @@ h3{
     font-size: 20px;
     font-weight: bold;
     margin: 10px 0 ;
+    color: #f09b24;
 }
 
 .row{
     margin-top: 10%;
     display: flex ;
     justify-content: space-between;
+    flex-wrap: nowrap;
 }
 .property-col{
     flex-basis: 30%;
-    background-color: #fff3f3 ;
+    background-color: white ;
     border: 1px solid black;
     border-radius: 10px;
     margin-bottom: 10%;
-    padding: 20px 12px;
+   
     box-sizing: border-box;
     transition: 0.5s;
+    border-radius: 10px;
+    flex-flow: wrap;
+    flex-direction: row;
 }
+
+.image{
+    background-color: #f09b24;
+    height: 160px;
+    margin-bottom: 20px;
+    background-size: cover;
+    border-radius: 10px;
+}
+.img1{
+    background-image: url(image/property1.png);
+    background-size: cover;
+}
+
+.img2{
+    background-image: url(image/property2.png);
+    background-size: cover;
+}
+
+.img3{
+    background-image: url(image/property3.png);
+    background-size: cover;
+}
+.property-col a{
+    background-color: #f2a532;
+    color: white;
+    margin: 20px 40px;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    border-radius: 20px;
+}
+
 .property-col:hover{
-    box-shadow: 0 0 20px 0px rgba(0,0,0,2);
+    transform: scale(1.2);
+    box-shadow: 0 0 20px 0px rgba(0,0,0,4);
 
 }
 
@@ -186,30 +365,45 @@ h3{
 
 .varieties{
     width: 80%;
+   
     margin: auto;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 .varities-col{
-    flex-basis: 50%;
+    flex-basis: 30%;
+    height: 500px;
+
+    background-color: white ;
+    border: 1px solid black;
     border-radius: 10px;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
+    margin-bottom: 10%;
+   
+    box-sizing: border-box;
+    transition: 0.5s;
+    border-radius: 10px;
+    flex-flow: wrap;
+    flex-direction: row;
 
 
 }
-.varities-col img{
-    display: block;
-    height: 250px;
-    width: 80%;
-    justify-content: space-between;
+
+.image2{
+    background-color: #f09b24;
+    height: 160px;
+    margin-bottom: 20px;
+    background-color: #f09b24;
+    background-size: cover;
     border-radius: 10px;
-    border: 2px solid orange;
-
-
 }
+
+.img4{
+    background-image: url(image/variety1.png);
+   
+}
+
+
 .layer{
     background: transparent;
     height: 100%;

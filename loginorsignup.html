@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+
+        <title>Content Creation Tutorials</title>
+        <link rel="stylesheet" href="style.css">
+      
+
+        
+    </head>
+    <body>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src ="image/logo1.jpg"></a>
+                <div class="nav-links" id="navlinks">
+                    <div class="ico">
+
+                    <ion-icon name="close-circle-outline"   onclick="hideMenu()"></ion-icon></div>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="property.html">PROPERTY</a></li>
+                        <li><a href="partner.html">PARTNER</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <div class="ico">
+                    <ion-icon name="reorder-three-outline"  onclick="showMenu()"></ion-icon></div>
+                   
+                       
+                    
+            </nav>
+            
+            <div class="form-fill">
+            <div class="btn-box">
+                <div id="btn"></div>
+                <button type="button" class="option-button" onclick="login()">Log In</button>
+                <button type="button" class="option-button" onclick="register()">Register</button>
+
+            </div>
+            <div class="social-media">
+
+                 
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <ion-icon name="logo-youtube"></ion-icon>
+                </div>
+                <form id="login" class="info">
+                    <input type="text" class="input-fill" placeholder="User-Id" required>
+                    <input type="text" class="input-fill" placeholder="Enter Password" required>
+                    <input type="checkbox" class="check-fill"><span id="write">Remember Password</span>
+                    <button type="submit" class="submit-btn">Login</button>
+                </form>
+
+                
+                <form id="register" class="info">
+                    <input type="text" class="input-fill" placeholder="User-Id" required>
+                    <input type="text" class="input-fill" placeholder="Email-Id" required>
+                    <input type="text" class="input-fill" placeholder="Enter Password" required>
+                    <input type="checkbox" class="check-fill"><span id="write">I agree to the terms and conditions</span>
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>
+                    
+                   
+        </div>
+       
+
+            
+            
+
+            
+        </section>
+
+
+        
+        
+      
+        <!-----------------Footer-------->
+        <section class="footer">
+            <h4>About us</h4>
+            <p>An immense mausoleum of white marble, built in Agra between 1631 and 1648<br>
+                 by order of the Mughal emperor Shah Jahan in memory of his favourite wife.</p>
+                 <div class="icons">
+
+                 
+                 <ion-icon name="logo-twitter"></ion-icon>
+                 <ion-icon name="logo-instagram"></ion-icon>
+                 <ion-icon name="logo-facebook"></ion-icon>
+                 <ion-icon name="logo-linkedin"></ion-icon>
+                 <ion-icon name="logo-youtube"></ion-icon>
+                 </div>
+                 
+                    
+                    
+
+                 </div>
+                 <p>Made with  <ion-icon class="icos" name="heart-circle-outline"></ion-icon>  by Experts</p>
+
+                </section>
+
+           <!----------------javaScript for toggle menu---------->
+
+           <script>
+            var navlinks= document.getElementById("navlinks");
+            function showMenu(){
+                navlinks.style.right = "0";
+            }
+
+            function hideMenu(){
+                navlinks.style.right = "-200px";
+                
+            }
+            var x=document.getElementById("login");
+            var y=document.getElementById("register");
+            var z=document.getElementById("btn");
+
+            function register(){
+                x.style.left ="-350px";
+                y.style.left="70px";
+                z.style.left="140px";
+
+            }
+
+            function login(){
+                x.style.left ="70px";
+                y.style.left="550px";
+                z.style.left="0px";
+
+            }
+           </script>
+    </body>
+</html>
