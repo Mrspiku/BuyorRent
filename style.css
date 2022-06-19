@@ -225,8 +225,8 @@ nav img{
 }
 
 .hero-btn:hover {
-    background-color: #3a1403;
-    transition: 1s;
+    background-color: #e85410;
+    transition: 0.5s;
 }
 nav .ico{
     display: none;
@@ -364,7 +364,8 @@ h3{
 /*------------------varieties---------*/
 
 .varieties{
-    width: 80%;
+    width: 90%;
+    margin: auto;
    
     margin: auto;
     text-align: center;
@@ -372,68 +373,83 @@ h3{
 }
 
 .varities-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     flex-basis: 30%;
-    height: 500px;
-
-    background-color: white ;
-    border: 1px solid black;
+    height: 350px;
+    width: 200px; 
+    position: relative;
+    background-color: rgb(246, 244, 242) ;
+    border: 3px solid black;
     border-radius: 10px;
-    margin-bottom: 10%;
-   
-    box-sizing: border-box;
-    transition: 0.5s;
-    border-radius: 10px;
-    flex-flow: wrap;
-    flex-direction: row;
-
+    margin: 20px;
+    padding: 20px;
+    transition: 0.3s;
 
 }
 
-.image2{
+.image-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #f09b24;
-    height: 160px;
+    height: 130px;
+    width: 130px;
+    border: 3px solid  #1a1919;
     margin-bottom: 20px;
-    background-color: #f09b24;
-    background-size: cover;
-    border-radius: 10px;
+    border-radius: 50%;
+    padding: 20px;
+    -webkit-background-size: cover ;
+    background-size:cover ;
+    background-position: center center;
+   
 }
 
 .img4{
     background-image: url(image/variety1.png);
+  
    
 }
-
-
+.img5{
+    background-image: url(image/variety2.png);
+ 
+   
+}
+.img6{
+    background-image: url(image/variety3.png);
+ 
+   
+}
 .layer{
+    font-size: 25px;
+    font-weight: bolder;
     background: transparent;
-    height: 100%;
-    width: 80%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: 0.5s;
+    line-height: 50px;
 }
-.layer:hover{
-    background: rgba(239, 206, 155, 0.7);
-    
+
+.varities-col:hover{
+    background: #f7bc6a;
+    box-shadow: 0 0 20px 0px rgba(0,0,7,6);
+    transform: scale(0.9);
+
 }
-.layer h3{
-    width: 100%;
-    font-weight: 500;
-    color:rgb(238, 122, 20);
-    font-size: 26px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    opacity: 0;
-    transition: 0.5s;
-    
+.list{
+    text-align: left;
+    font-size: 20px;
 }
-.layer:hover h3{
-    bottom: 50%;
-    opacity: 1;
+
+.varities-col a{
+    background-color: #1b1b1a;
+    color: white;
+    width: 150px;
+    margin: 10px 10px;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    border-radius: 20px;
 }
+
 
 /*-------------------services------------*/
 
@@ -450,19 +466,23 @@ h3{
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: center;
+    color:#f2a532
 
 }
 .services-col img{
     height: 300px;
     width: 100%;
-    border: 3px solid orange;
+    border: 6px solid orange;
     border-radius: 10px;
 
 }
 .services-col p{
     padding: 0;
+    font-weight: bold;
 }
-.services-col h3{
+
+.services-col h2{
+    font-size: 20px;
     margin-top: 16px;
     margin-bottom: 15px;
     text-align: center;
@@ -489,11 +509,13 @@ h3{
     cursor: pointer;
     display: flex;
     justify-content: space-evenly;
+    box-shadow: 0 0 10px 0px rgba(0,0,0,4);
 
 }
 
 .feedback-col img{
-    height: 40px;
+    height: 60px;
+    margin-top: 30px;
     margin-left: 5px;
     margin-right: 30px;
     border-radius: 50%;
@@ -508,9 +530,7 @@ h3{
 
 }
 
-.feedback-col .fa{
-    color: coral;
-}
+
 
 @media(max-width: 700px){
     .feedback-col img{
@@ -522,24 +542,50 @@ h3{
 }
 /*----------Book Now---------------*/
 .booknow{
-    margin: 100px auto;
-    width: 80%;
-    background-image: linear-gradient(rgb(47, 45, 44),rgba(179, 148, 148, 0.7));
-    
-    background-color: #efe9e9;
+    background-image: url(image/booknow.png);
     background-position: center;
     background-size: cover;
+    margin: 100px auto;
+    width: 80%;
     border-radius: 10px;
+    border: 3px solid rgb(10, 10, 10);
     text-align: center;
     padding: 100px 0;
+    opacity: 1;
 
 }
 .booknow h1{
-    color:rgba(243, 247, 251, 0.94);
+    
+    color:rgba(247, 180, 24, 0.94);
     margin-bottom: 40px;
     padding: 0;
+    text-align: center;
 
 }
+.booknow:hover{
+   
+    box-shadow: 0 0 20px 0px rgba(0,0,7,6);
+}
+.booknow a{
+    align-items: center;
+    background-color: #e33636;
+    border: 3px solid rgb(14, 13, 13);
+    color: white;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 0px;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    border-radius: 20px;
+   
+
+}
+.booknow a:hover{
+   
+    background-color: #101010;
+}
+
 @media (max-width: 700px){
     .booknow h1{
         font-size: 25px;
@@ -552,11 +598,17 @@ h3{
     width: 100%;
     text-align: center;
     padding: 30px 0 ;
+    background-color: #0b0b0b;
 }
 .footer h4{
     margin-bottom: 25px;
     margin-top: 20px;
     font-weight: bolder;
+    color: #e7e4e4;
+}
+.footer p{
+    color:rgb(238, 122, 20)
+    
 }
 .icons{
     color:rgb(238, 122, 20);
@@ -580,7 +632,9 @@ h3{
     background-position: center;
     background-size: cover;
     text-align: center;
-    color: rgb(red, green, blue)
+    color: rgb(red, green, blue);
+    
+    
 
 }
 .sub-header h1{
